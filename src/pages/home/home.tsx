@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           <div className={styles.aboutTextDiv}>
             <p className={styles.aboutText}>
-              yoyo Every puzzle I’ve encountered—whether a tangled dataset or a
+              yoyo Every choochool puzzle I’ve encountered—whether a tangled dataset or a
               complex engineering challenge—has fueled my passion for uncovering
               solutions. Growing up, I was the one staying up late, driven by
               the thrill of solving problems others had given up on. That same

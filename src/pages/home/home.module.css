@@ -1,0 +1,190 @@
+.main {
+  background-color: #23252f;
+  width: 100%;
+  height: auto;
+}
+.navbar {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+}
+.navTitle{
+  font-size: 20px;
+}
+
+.navbar h1 {
+  padding: 0;
+}
+.navbar p {
+  margin-left: 20px;
+  padding: 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.identity {
+  height: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.identityTitle {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.identityMajor {
+  font-size: 20px;
+  color: white;
+}
+
+.profilePic {
+  width: 250px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.aboutTextDiv {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+}
+
+.aboutText {
+  font-size: 25px;
+  color: white;
+  line-height: 1.5;
+}
+
+.mailDiv {
+  transition: 0.3s ease-in;
+}
+
+.mailDiv:hover {
+  margin-top: -10px;
+}
+.googleDiv {
+  transition: 0.3s ease-in;
+}
+
+.googleDiv:hover {
+  margin-top: -10px;
+}
+.githubDiv {
+  transition: 0.3s ease-in;
+}
+
+.githubDiv:hover {
+  margin-top: -10px;
+}
+.linkDiv {
+  transition: 0.3s ease-in;
+}
+
+.linkDiv:hover {
+  margin-top: -10px;
+}
+
+.educationsTitle {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.educationsTitleDiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.educationsTitleDiv img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  margin-right: 10px;
+}
+
+.universityTitle {
+  font-size: 25px;
+  color: white;
+  line-height: 1.5;
+}
+.universitySubTitle {
+  font-size: 20px;
+  color: white;
+}
+.universityTitleDiv {
+  width: 100%;
+  height: auto;
+}
+.universityDetails{
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+  }
+  .identity{
+    width: 100%;
+    padding-top: 50px;
+  }
+  .aboutTextDiv{
+    width: 95%;
+    padding: 10px;
+  }
+  .aboutText{
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .navTitle{
+    margin-left: 0 !important;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navbar {
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+  }
+
+}

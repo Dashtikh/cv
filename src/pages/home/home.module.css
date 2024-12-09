@@ -1,5 +1,5 @@
 .main {
-  background-color: #23252f;
+  background-color: #e8e8e8;
   width: 100%;
   height: auto;
 }
@@ -81,13 +81,14 @@
   width: 60%;
   height: auto;
   display: flex;
+  text-align: justify;
   flex-direction: column;
   padding: 70px;
 }
 
 .aboutText {
   font-size: 25px;
-  color: white;
+  color: rgb(0, 0, 0);
   line-height: 1.5;
 }
 
@@ -187,4 +188,102 @@
     z-index: 1000; /* Ensures the navbar stays above other content */
   }
 
+}
+.educationSection {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.educationsTitleDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.educationIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.educationsTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.educationCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+.educationHeader {
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.universityTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.universitySubTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.universityDetails {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+/* Set all body text to black */
+body {
+  color: #000000; /* Black */
+  background-color: #f0f0f0; /* Optional: Ensure background remains bright grey */
+  font-family: Arial, sans-serif; /* Optional: Set a clean font */
+}
+
+/* Style headings with different shades of grey */
+h1 {
+  color: #333333; /* Dark grey */
+}
+
+h2 {
+  color: #444444; /* Slightly lighter dark grey */
+}
+
+h3 {
+  color: #555555; /* Medium grey */
+}
+
+h4 {
+  color: #666666; /* Light medium grey */
+}
+
+h5 {
+  color: #777777; /* Lighter grey */
+}
+
+h6 {
+  color: #888888; /* Even lighter grey */
+}
+
+/* Optional: Style links to stand out */
+a {
+  color: #0066cc; /* Blue for links */
+  text-decoration: none; /* Remove underline for a cleaner look */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }

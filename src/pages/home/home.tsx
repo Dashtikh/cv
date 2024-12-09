@@ -53,8 +53,7 @@ export default function Home() {
           </div>
           <div className={styles.aboutTextDiv}>
             <p className={styles.aboutText}>
-              yoyo Every choochool puzzle I’ve encountered—whether a tangled dataset or a
-              yoyo Every puzzle gol gol I’ve encountered—whether a tangled dataset or a
+              Every puzzle I’ve encountered—whether a tangled dataset or a
               complex engineering challenge—has fueled my passion for uncovering
               solutions. Growing up, I was the one staying up late, driven by
               the thrill of solving problems others had given up on. That same
@@ -72,52 +71,62 @@ export default function Home() {
               combines critical thinking, a hands-on mindset, and a drive to ask
               questions that lead to the right answers.
             </p>
-            <div className={styles.educationsTitleDiv}>
-              <img src={education} alt="" />
-              <p className={styles.educationsTitle}>Education</p>
+            <div className={styles.educationSection}>
+              <div className={styles.educationsTitleDiv}>
+                <img src={education} alt="Education Icon" className={styles.educationIcon} />
+                <h2 className={styles.educationsTitle}>Education</h2>
+              </div>
+
+              {/* Education Card 1 */}
+              <div className={styles.educationCard}>
+                <div className={styles.educationHeader}>
+                  <h3 className={styles.universityTitle}>
+                    Master of Science | Sep. 2022 – Aug. 2024
+                  </h3>
+                  <p className={styles.universitySubTitle}>
+                    Simon Fraser University - Mechatronic Systems Engineering
+                  </p>
+                </div>
+                <ul className={styles.universityDetails}>
+                  <li>
+                    Nominated for the prestigious Governor General's Gold Medal, awarded to
+                    only two SFU graduate students with the most outstanding academic
+                    records during thesis completion.
+                  </li>
+                  <li>
+                    Scholarships: Research Assistant Scholarship, Special Graduate Entrance
+                    Scholarship, Three Graduate Fellowship Scholarships
+                  </li>
+                  <li>
+                    Related Courses: Machine Learning, Analysis of Experimental And
+                    Observed Data, Methods Of Research
+                  </li>
+                </ul>
+              </div>
+
+              {/* Education Card 2 */}
+              <div className={styles.educationCard}>
+                <div className={styles.educationHeader}>
+                  <h3 className={styles.universityTitle}>
+                    Bachelor of Science | Sep. 2017 – Feb. 2022
+                  </h3>
+                  <p className={styles.universitySubTitle}>
+                    Sharif University of Technology - Industrial Engineering
+                  </p>
+                </div>
+                <ul className={styles.universityDetails}>
+                  <li>GPA: 4.11/4.3</li>
+                  <li>
+                    Related Courses: Engineering Statistics, Probability, Artificial
+                    Intelligence, Data Mining, Python Programming
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>
-                Master of Science | Sep. 2022 – Aug. 2024 | Simon Fraser
-                University
-              </p>
-              <p className={styles.universitySubTitle}>
-                Mechatronic Systems Engineering{" "}
-              </p>
-              <p className={styles.universityDetails}>
-                {" "}
-                • Nominated for the prestigious Governor General's Gold Medal,
-                awarded to only two SFU graduate students with the most
-                outstanding academic records during thesis completion.
-              </p>
-              <p className={styles.universityDetails}>
-                {" "}
-                • Scholarships: Research Assistant Scholarship, Special Graduate
-                Entrance Scholarship, Three Graduate Fellowship Scholarships
-              </p>
-              <p className={styles.universityDetails}>
-                {" "}
-                • Related Courses: Machine Learning, Analysis of Experimental
-                And Observed Data, Methods Of Research
-              </p>
-            </div>
-            <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>
-                Bachelor of Science | Sep. 2017 – Feb. 2022 | Sharif University
-                of Technology
-              </p>
-              <p className={styles.universitySubTitle}>
-                Industrial Engineering
-              </p>
-              <p className={styles.universityDetails}>• GPA: 4.11/4.3</p>
-              <p className={styles.universityDetails}>
-                • Related Courses: Engineering Statistics, Probability,
-                Artificial Intelligence, Data Mining, Python Programming
-              </p>
-            </div>
+
             <div className={styles.educationsTitleDiv}>
               <img src={exprience} alt="" />
-              <p className={styles.educationsTitle}>Selected Exprince</p>
+              <p className={styles.educationsTitle}>Selected Experience</p>
             </div>
             <div className={styles.universityTitleDiv}>
               <p className={styles.universityTitle}>

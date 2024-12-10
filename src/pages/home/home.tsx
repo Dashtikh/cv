@@ -71,6 +71,7 @@ export default function Home() {
               combines critical thinking, a hands-on mindset, and a drive to ask
               questions that lead to the right answers.
             </p>
+            
             <div className={styles.educationSection}>
               <div className={styles.educationsTitleDiv}>
                 <img src={education} alt="Education Icon" className={styles.educationIcon} />
@@ -124,105 +125,126 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={styles.educationsTitleDiv}>
-              <img src={exprience} alt="" />
-              <p className={styles.educationsTitle}>Selected Experience</p>
+
+            <div className={styles.experienceSection}>
+  <div className={styles.experienceTitleDiv}>
+    <img
+      src={exprience}
+      alt="Experience Icon"
+      className={styles.experienceIcon}
+    />
+    <h2 className={styles.experienceTitle}>Selected Experience</h2>
+  </div>
+
+  {/* Experience Card 1 */}
+  <div className={styles.experienceCard}>
+    <h3 className={styles.jobTitle}>
+      Applied ML Researcher | Simon Fraser University, Burnaby, BC
+      <span className={styles.jobDate}>| Sep. 2022 – Aug. 2024</span>
+    </h3>
+    <ul className={styles.jobDetails}>
+      <li>
+        Developed scalable data pipelines for preprocessing and analyzing 3D
+        printing data to drive model development and decision-making.
+      </li>
+      <li>
+        Integrated physics into ML models, reducing dataset dependency and
+        achieving below 3% errors.
+      </li>
+      <li>
+        Enhanced real-time data processing for adaptive 3D printing workflows.{" "}
+        <a
+          href="https://scholar.google.ca/citations?user=7McvDK0AAAAJ&hl=en&authuser=2"
+          className={styles.jobLink}
+        >
+          (Publications link)
+        </a>
+      </li>
+    </ul>
+  </div>
+
+              {/* Experience Card 2 */}
+              <div className={styles.experienceCard}>
+                <h3 className={styles.jobTitle}>
+                  Data Science Researcher | Sharif University of Technology, Tehran, Iran
+                  <span className={styles.jobDate}>| Dec. 2020 – Mar. 2021</span>
+                </h3>
+                <ul className={styles.jobDetails}>
+                  <li>
+                    Performed EDA on urban accident and congestion data to identify key
+                    patterns and trends.
+                  </li>
+                  <li>
+                    Analyzed temporal trends to identify high-risk periods, supporting
+                    targeted accident interventions.
+                  </li>
+                  <li>
+                    Built a neural network-based solution for predicting accident risk with
+                    96% precision on non-accidents and 45% recall on accidents.{" "}
+                    <a
+                      href="https://github.com/mahyaqorbani/Accident-Impact-Prediction-using-Deep-Convolutional-and-Recurrent-Neural-Networks"
+                      className={styles.jobLink}
+                    >
+                      (GitHub link)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            {/* Experience Card 3 */}
+            <div className={styles.experienceCard}>
+              <h3 className={styles.jobTitle}>
+                Business Intelligence Developer | Sepehr Plastic Padideh, Tehran, Iran
+                <span className={styles.jobDate}>| Oct. 2020 – Jun. 2021</span>
+              </h3>
+              <ul className={styles.jobDetails}>
+                <li>
+                  Led real-time dashboard development, converting large-scale data into actionable insights.
+                </li>
+                <li>
+                  Collaborated on BI solutions, improving cross-departmental data use and efficiency by 25%.
+                </li>
+                <li>
+                  Contributed to the design of data models and engineered an integrated structure, resulting in enhanced cross-functional collaboration and improved data accessibility.
+                </li>
+              </ul>
             </div>
-            <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>
-                Applied ML Researcher | Simon Fraser University, Burnaby, BC|
-                September 2022 – August 2024
-              </p>
-              <p className={styles.universityDetails}>
-                • Developed scalable data pipelines for preprocessing and
-                analyzing 3D printing data to drive model development and
-                decision-making.
-              </p>
-              <p className={styles.universityDetails}>
-                • Integrated physics into ML models, reducing dataset dependency
-                and achieving below 3% errors.
-              </p>
-              <p className={styles.universityDetails}>
-                • Enhanced real-time data processing for adaptive 3D printing
-                workflows.{" "}
-                <a href="https://scholar.google.ca/citations?user=7McvDK0AAAAJ&hl=en&authuser=2">
-                  (Publications link)
-                </a>
-              </p>
+
+            {/* Experience Card 4 */}
+            <div className={styles.experienceCard}>
+              <h3 className={styles.jobTitle}>
+                Data Scientist | Fixshow, Tehran, Iran
+                <span className={styles.jobDate}>| Apr. 2019 – Dec. 2019</span>
+              </h3>
+              <ul className={styles.jobDetails}>
+                <li>
+                  Wrote SQL queries to extract data, enhancing inputs for the recommendation system and increasing campaign response rates by 14%.
+                </li>
+                <li>
+                  Engineered features for marketing KPIs, improving campaign planning effectiveness by 12%.
+                </li>
+                <li>
+                  Assisted in A/B testing for marketing strategies and optimizing customer engagement.
+                </li>
+              </ul>
             </div>
-            <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>
-                Data Science Researcher | Sharif University of Technology,
-                Tehran, Iran | December 2020 – March 2021
-              </p>
-              <p className={styles.universityDetails}>
-                • Performed EDA on urban accident and congestion data to
-                identify key patterns and trends.
-              </p>
-              <p className={styles.universityDetails}>
-                • Analyzed temporal trends to identify high-risk periods,
-                supporting targeted accident interventions.
-              </p>
-              <p className={styles.universityDetails}>
-                • Built a neural network-based solution for predicting accident
-                risk with 96% precision on non-accidents and 45% recall on
-                accidents.{" "}
-                <a href="https://github.com/mahyaqorbani/Accident-Impact-Prediction-using-Deep-Convolutional-and-Recurrent-Neural-Networks">
-                  (GitHub link)
-                </a>
-              </p>
+
+            {/* Experience Card 5 */}
+            <div className={styles.experienceCard}>
+              <h3 className={styles.jobTitle}>
+                Junior Data Analyst | Nethami, Tehran, Iran
+                <span className={styles.jobDate}>| Feb. 2018 – Jan. 2019</span>
+              </h3>
+              <ul className={styles.jobDetails}>
+                <li>
+                  Generated descriptive analytics reports to help small business clients understand key performance indicators.
+                </li>
+                <li>
+                  Assisted in creating simple visual presentations using data visualizations for small business clients.
+                </li>
+              </ul>
             </div>
-            <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>
-                Business Intelligence Developer | Sepehr Plastic Padideh,
-                Tehran, Iran | October 2020 – June 2021
-              </p>
-              <p className={styles.universityDetails}>
-                • Led real-time dashboard development, converting large-scale
-                data into actionable insights.
-              </p>
-              <p className={styles.universityDetails}>
-                • Collaborated on BI solutions, improving cross-departmental
-                data use and efficiency by 25%.
-              </p>
-              <p className={styles.universityDetails}>
-                • Contributed to the design of data models and engineered an
-                integrated structure, resulting in enhanced cross-functional
-                collaboration and improved data accessibility.
-              </p>
-            </div>
-            <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>
-                Data Scientist Fixshow, Tehran, Iran | April 2019 – December
-                2019
-              </p>
-              <p className={styles.universityDetails}>
-                • Wrote SQL queries to extract data, enhancing inputs for the
-                recommendation system and increasing campaign response rates by
-                14%.
-              </p>
-              <p className={styles.universityDetails}>
-                • Engineered features for marketing KPIs, improving campaign
-                planning effectiveness by 12%.
-              </p>
-              <p className={styles.universityDetails}>
-                • Assisted in A/B testing for marketing strategies and
-                optimizing customer engagement.
-              </p>
-            </div>
-            <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>
-                Junior Data Analyst Nethami, Tehran, Iran | February 2018 –
-                January 2019
-              </p>
-              <p className={styles.universityDetails}>
-                • Generated descriptive analytics reports to help small business
-                clients understand key performance indicators.
-              </p>
-              <p className={styles.universityDetails}>
-                • Assisted in creating simple visual presentations using data
-                visualizations for small business clients
-              </p>
+
+              
             </div>
             <div className={styles.educationsTitleDiv}>
               <img src={skill} alt="" />

@@ -245,32 +245,65 @@ export default function Home() {
             </div>
 
               
-            </div>
-            <div className={styles.educationsTitleDiv}>
-              <img src={skill} alt="" />
-              <p className={styles.educationsTitle}>Skills</p>
-            </div>
-            <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>
-                • Tools & Languages: Proficient in Python (Pandas, Numpy,
-                Matplotlib, Scikit-Learn, Tensorflow, Pytorch), Sql, And Git.
-                Experienced With R, Power Bi, Tableau, And Aws Lambda.
-              </p>
-              <p className={styles.universityTitle}>
-                • Data Processing & Analysis: Expertise in Data Cleaning,
-                Feature Selection, Feature Engineering, Handling Missing Data,
-                And Eda. Strong In Time Series Analysis and Hypothesis Testing.
-              </p>
-              <p className={styles.universityTitle}>
-                • Machine Learning: Skilled In Building ML Models, Deep Learning
-                (Tensorflow, Pytorch), And Association Rule Mining. Familiar
-                With A/B Testing and Statistical Modeling.
-              </p>
-              <p className={styles.universityTitle}>
-                • Additional Skills: Experienced In Data Visualization,
-                Reporting, And Presenting Insights. Familiar With Process Mining
-                and Requirements Gathering.
-              </p>
+            <div className={styles.skillsSection}>
+  <div className={styles.skillsTitleDiv}>
+    <img src={skill} alt="Skills Icon" className={styles.skillsIcon} />
+    <h2 className={styles.skillsTitle}>Skills</h2>
+  </div>
+
+  <div className={styles.skillsGrid}>
+    {/* Column 1 */}
+    <div className={styles.skillsColumn}>
+      <h3 className={styles.skillsCategory}>Tools & Languages</h3>
+      <ul className={styles.skillsList}>
+        <li>Python (Pandas, Numpy, Matplotlib, Scikit-Learn, TensorFlow, PyTorch)</li>
+        <li>SQL</li>
+        <li>Git</li>
+        <li>R</li>
+        <li>Power BI</li>
+        <li>Tableau</li>
+        <li>AWS Lambda</li>
+      </ul>
+    </div>
+
+    {/* Column 2 */}
+    <div className={styles.skillsColumn}>
+      <h3 className={styles.skillsCategory}>Data Processing & Analysis</h3>
+      <ul className={styles.skillsList}>
+        <li>Data Cleaning</li>
+        <li>Feature Selection & Engineering</li>
+        <li>Handling Missing Data</li>
+        <li>Exploratory Data Analysis (EDA)</li>
+        <li>Time Series Analysis</li>
+        <li>Hypothesis Testing</li>
+      </ul>
+    </div>
+
+    {/* Column 3 */}
+    <div className={styles.skillsColumn}>
+      <h3 className={styles.skillsCategory}>Machine Learning</h3>
+      <ul className={styles.skillsList}>
+        <li>Building ML Models</li>
+        <li>Deep Learning (TensorFlow, PyTorch)</li>
+        <li>Association Rule Mining</li>
+        <li>A/B Testing</li>
+        <li>Statistical Modeling</li>
+      </ul>
+    </div>
+
+    {/* Column 4 */}
+    <div className={styles.skillsColumn}>
+      <h3 className={styles.skillsCategory}>Additional Skills</h3>
+      <ul className={styles.skillsList}>
+        <li>Data Visualization & Reporting</li>
+        <li>Presenting Insights</li>
+        <li>Process Mining</li>
+        <li>Requirements Gathering</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
             </div>
             <div className={styles.educationsTitleDiv}>
               <img src={project} alt="" />

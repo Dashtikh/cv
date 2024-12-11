@@ -9,8 +9,10 @@ import exprience from "../../assets/experience.png";
 import skill from "../../assets/skill.png";
 import project from "../../assets/projects.png";
 import link from "../../assets/link.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <main className={styles.main}>
@@ -277,7 +279,7 @@ export default function Home() {
               <p className={styles.educationsTitle}>Projects</p>
             </div>
             <div className={styles.universityTitleDiv}>
-              <p className={styles.universityTitle}>Analyzing Store Sales</p>
+              <p className={styles.universityTitle} onClick={()=> navigate('/AnalyzingStoreSales')}>Analyzing Store Sales</p>
               <p className={styles.universityDetails}>
                 • Conducted exploratory analysis to uncover sales trends and
                 anomalies.

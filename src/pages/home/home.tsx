@@ -55,11 +55,7 @@ export default function Home() {
           </div>
           <div className={styles.aboutTextDiv}>
             <p className={styles.aboutText}>
-              Every puzzle I’ve encountered—whether a tangled dataset or a
-              complex engineering challenge—has fueled my passion for uncovering
-              solutions. Growing up, I was the one staying up late, driven by
-              the thrill of solving problems others had given up on. That same
-              drive shapes who I am today. With a Master’s in engineering and
+            I’m driven by curiosity and a love for tackling tough problems, turning challenges into opportunities to create meaningful impact. With a Master’s in engineering and
               three years of experience across diverse data roles, I’ve built a
               foundation that blends technical expertise with a deep curiosity
               for uncovering insights. From leading end-to-end data projects to
@@ -91,18 +87,17 @@ export default function Home() {
                   </p>
                 </div>
                 <ul className={styles.universityDetails}>
+                <li>
+                    GPA: 4.18/4.3
+                  </li>
                   <li>
                     Nominated for the prestigious Governor General's Gold Medal, awarded to
                     only two SFU graduate students with the most outstanding academic
                     records during thesis completion.
                   </li>
                   <li>
-                    Scholarships: Research Assistant Scholarship, Special Graduate Entrance
-                    Scholarship, Three Graduate Fellowship Scholarships
-                  </li>
-                  <li>
-                    Related Courses: Machine Learning, Analysis of Experimental And
-                    Observed Data, Methods Of Research
+                    Related Courses: Machine Learning, Analysis of Experimental and
+                    Observed Data, Methods of Research
                   </li>
                 </ul>
               </div>
@@ -120,7 +115,7 @@ export default function Home() {
                 <ul className={styles.universityDetails}>
                   <li>GPA: 4.11/4.3</li>
                   <li>
-                    Related Courses: Engineering Statistics, Probability, Artificial
+                    Related Courses: Operation Research, Engineering Statistics, Probability, Artificial
                     Intelligence, Data Mining, Python Programming
                   </li>
                 </ul>
@@ -146,15 +141,16 @@ export default function Home() {
     </h3>
     <ul className={styles.jobDetails}>
       <li>
-        Developed scalable data pipelines for preprocessing and analyzing 3D
-        printing data to drive model development and decision-making.
+      Built a distributed data pipeline on Compute Canada, leveraging parallel processing and multi-node training to enhance scalability and achieve a 12x performance boost.
       </li>
       <li>
-        Integrated physics into ML models, reducing dataset dependency and
-        achieving below 3% errors.
+      Reduced validation errors below 3% by integrating physics into ML pipelines in Pytorch, minimizing dependency on large datasets.
       </li>
       <li>
-        Enhanced real-time data processing for adaptive 3D printing workflows.{" "}
+      Enabled real-time adaptability for 3D printing by extending the data pipeline to process live data.
+      </li>
+      <li>
+      Published in top journals on AI applications in engineering.{" "}
         <a
           href="https://scholar.google.ca/citations?user=7McvDK0AAAAJ&hl=en&authuser=2"
           className={styles.jobLink}
@@ -168,21 +164,21 @@ export default function Home() {
               {/* Experience Card 2 */}
               <div className={styles.experienceCard}>
                 <h3 className={styles.jobTitle}>
-                  Data Science Researcher | Sharif University of Technology, Tehran, Iran
+                  Data Science Researcher | Sharif University of Tech, Tehran, Iran
                   <span className={styles.jobDate}>| Dec. 2020 – Mar. 2021</span>
                 </h3>
                 <ul className={styles.jobDetails}>
                   <li>
-                    Performed EDA on urban accident and congestion data to identify key
-                    patterns and trends.
+                  Achieved 96% precision in accident prediction with deep learning using Tensorflow for urban safety.
                   </li>
                   <li>
-                    Analyzed temporal trends to identify high-risk periods, supporting
-                    targeted accident interventions.
+                  Identified high-risk accident periods via temporal trend analysis, enabling targeted interventions.
                   </li>
                   <li>
-                    Built a neural network-based solution for predicting accident risk with
-                    96% precision on non-accidents and 45% recall on accidents.{" "}
+                  Revealed key urban congestion patterns using EDA and data visualization techniques.
+                  </li>
+                  <li>
+                  Delivered actionable insights and extracted targeted safety KPIs and measures.
                     <a
                       href="https://github.com/mahyaqorbani/Accident-Impact-Prediction-using-Deep-Convolutional-and-Recurrent-Neural-Networks"
                       className={styles.jobLink}
@@ -195,19 +191,20 @@ export default function Home() {
             {/* Experience Card 3 */}
             <div className={styles.experienceCard}>
               <h3 className={styles.jobTitle}>
-                Business Intelligence Developer | Sepehr Plastic Padideh, Tehran, Iran
+              Business Intelligence/Data Analyst | Sepehr Plastic, Tehran, Iran
                 <span className={styles.jobDate}>| Oct. 2020 – Jun. 2021</span>
               </h3>
               <ul className={styles.jobDetails}>
                 <li>
-                  Led real-time dashboard development, converting large-scale data into actionable insights.
+                Reduced query execution time by 40% by optimizing pipelines and integrating MySQL.                </li>
+                <li>
+                Collaborated with stakeholders to identify and resolve data inconsistencies.
                 </li>
                 <li>
-                  Collaborated on BI solutions, improving cross-departmental data use and efficiency by 25%.
-                </li>
-                <li>
-                  Contributed to the design of data models and engineered an integrated structure, resulting in enhanced cross-functional collaboration and improved data accessibility.
-                </li>
+                Designed Power BI dashboards adopted by 5+ departments, driving data-informed decisions.                </li>
+              <li>
+              Streamlined data pipelines, reducing cross-departmental data request resolution times by 200%. 
+              </li>
               </ul>
             </div>
 
@@ -219,13 +216,13 @@ export default function Home() {
               </h3>
               <ul className={styles.jobDetails}>
                 <li>
-                  Wrote SQL queries to extract data, enhancing inputs for the recommendation system and increasing campaign response rates by 14%.
-                </li>
+                Improved recommendation system performance by 15% via predictive analytics in Scikit-Learn.                </li>
                 <li>
-                  Engineered features for marketing KPIs, improving campaign planning effectiveness by 12%.
-                </li>
+                Increased marketing campaign effectiveness by 10% with engineered features for KPIs.                </li>
                 <li>
-                  Assisted in A/B testing for marketing strategies and optimizing customer engagement.
+                Boosted customer engagement by optimizing strategies with A/B testing experiments.                </li>
+                <li>
+                Extracted actionable business insights via statistical modeling and data visualization in Matplotlib.
                 </li>
               </ul>
             </div>
@@ -260,11 +257,9 @@ export default function Home() {
       <ul className={styles.skillsList}>
         <li>Python (Pandas, Numpy, Matplotlib, Scikit-Learn, TensorFlow, PyTorch)</li>
         <li>SQL</li>
-        <li>Git</li>
         <li>R</li>
         <li>Power BI</li>
-        <li>Tableau</li>
-        <li>AWS Lambda</li>
+        <li>AWS(Lambda, Glue, SageMaker)</li>
       </ul>
     </div>
 
@@ -272,35 +267,34 @@ export default function Home() {
     <div className={styles.skillsColumn}>
       <h3 className={styles.skillsCategory}>Data Processing & Analysis</h3>
       <ul className={styles.skillsList}>
-        <li>Data Cleaning</li>
-        <li>Feature Selection & Engineering</li>
-        <li>Handling Missing Data</li>
+        <li>Data Warehousing and ETL Processes</li>
         <li>Exploratory Data Analysis (EDA)</li>
-        <li>Time Series Analysis</li>
-        <li>Hypothesis Testing</li>
+        <li>Experimentation</li>
+        <li>Feature Selection & Engineering</li>
+        <li>Regression Analysis</li>
       </ul>
     </div>
 
     {/* Column 3 */}
     <div className={styles.skillsColumn}>
-      <h3 className={styles.skillsCategory}>Machine Learning</h3>
+      <h3 className={styles.skillsCategory}>Data Modeling & Machine Learning</h3>
       <ul className={styles.skillsList}>
-        <li>Building ML Models</li>
-        <li>Deep Learning (TensorFlow, PyTorch)</li>
-        <li>Association Rule Mining</li>
-        <li>A/B Testing</li>
+        <li>Model Deployment</li>
+        <li>Neural Networks (TensorFlow, PyTorch)</li>
+        <li>Retrieval-augmented generation (RAG)</li>
+        <li>Causal Modeling and Inference</li>
         <li>Statistical Modeling</li>
       </ul>
     </div>
 
     {/* Column 4 */}
     <div className={styles.skillsColumn}>
-      <h3 className={styles.skillsCategory}>Additional Skills</h3>
+      <h3 className={styles.skillsCategory}>Software Engineering</h3>
       <ul className={styles.skillsList}>
-        <li>Data Visualization & Reporting</li>
-        <li>Presenting Insights</li>
-        <li>Process Mining</li>
-        <li>Requirements Gathering</li>
+      <li>Data Structures & Algorithms</li>
+        <li>Version Control</li>
+        <li>Containarisation</li>
+        <li>Logging and monitoring</li>
       </ul>
     </div>
   </div>
